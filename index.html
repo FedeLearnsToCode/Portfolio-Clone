@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- NAVIGATION BAR -->
-    <nav class="nav">
+    <nav class="nav" role="navigation" aria-label="Main navigation bar">
       <ul>
         <li><a href="#project1">Projects</a></li>
         <li><a href="#about">About</a></li>
@@ -26,6 +26,7 @@
 
     <!-- HERO -->
     <main class="hero">
+      <h1 class="visually-hidden">Portfolio di Lorem Ipsum, Web Developer</h1>
       <div class="row1">
         <p class="big-text title1">Lorem</p>
         <p class="small-text par1">
@@ -44,7 +45,7 @@
           <p class="big-text title3">Web</p>
         </div>
         <div>
-          <p class="small-text hover par3">Contact me</p>
+          <p class="small-text hover par3"><a href="#contact">Contact me</a></p>
         </div>
       </div>
       <div class="row4">
@@ -54,13 +55,21 @@
     </main>
 
     <!-- PROJECTS -->
-    <section class="projects hidden" id="projects">
+    <section
+      class="projects hidden"
+      id="projects"
+      aria-label="projects section"
+    >
       <div class="project-title">
         <p class="r-text big-text">Selected<br />projects</p>
         <p class="l-text big-text">(x2)</p>
       </div>
       <!-- PROJECT 1 -->
-      <section class="project project1 hidden" id="project1">
+      <section
+        class="project project1 hidden"
+        id="project1"
+        aria-label="Project 1"
+      >
         <div class="col25">
           <div class="project-subtitle">
             <h2 class="project-subtitle">Project 1</h2>
@@ -88,24 +97,26 @@
           <img
             class="project-img"
             src="https://cdn.pixabay.com/photo/2017/07/06/12/27/florence-2477858_1280.jpg"
-            alt="Florence building"
+            alt="Panoramic view of a building in Florence"
           />
         </div>
         <div class="col50">
           <video
             src="https://videocdn.cdnpk.net/harmony/content/video/partners1475/small_watermarked/h350669e0_0004_preview.mp4"
+            controls
             autoplay
             loop
+            aria-label="project preview video"
           ></video>
           <img
             style="text-align: end"
             src="https://images.unsplash.com/photo-1727861641838-1a9ca03dbb91?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Florence people"
+            alt="People walking through the streets of Florence"
           />
         </div>
       </section>
       <!-- PROJECT 2 -->
-      <section class="project project2 hidden">
+      <section class="project project2 hidden" aria-label="Project 2">
         <div class="col25">
           <div class="project-subtitle">
             <h2 class="project-subtitle">Project 2</h2>
@@ -133,24 +144,26 @@
           <img
             class="project-img"
             src="https://cdn.pixabay.com/photo/2017/07/06/12/27/florence-2477858_1280.jpg"
-            alt="Florence building"
+            alt="Panoramic view of a building in Florence"
           />
         </div>
         <div class="col50">
           <video
             src="https://videocdn.cdnpk.net/harmony/content/video/partners1475/small_watermarked/h350669e0_0004_preview.mp4"
+            controls
             autoplay
             loop
+            aria-label="project preview video"
           ></video>
           <img
             style="text-align: end"
             src="https://images.unsplash.com/photo-1727861641838-1a9ca03dbb91?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Florence people"
+            alt="People walking through the streets of Florence"
           />
         </div>
       </section>
       <!-- PROJECT 3 -->
-      <section class="project project3 hidden">
+      <section class="project project3 hidden" aria-label="Project 3">
         <div class="col25">
           <div class="project-subtitle">
             <h2 class="project-subtitle">Project 3</h2>
@@ -178,19 +191,21 @@
           <img
             class="project-img"
             src="https://cdn.pixabay.com/photo/2017/07/06/12/27/florence-2477858_1280.jpg"
-            alt="Florence building"
+            alt="Panoramic view of a building in Florence"
           />
         </div>
         <div class="col50">
           <video
             src="https://videocdn.cdnpk.net/harmony/content/video/partners1475/small_watermarked/h350669e0_0004_preview.mp4"
+            controls
             autoplay
             loop
+            aria-label="project preview video"
           ></video>
           <img
             style="text-align: end"
             src="https://images.unsplash.com/photo-1727861641838-1a9ca03dbb91?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Florence people"
+            alt="People walking through the streets of Florence"
           />
         </div>
       </section>
@@ -229,9 +244,11 @@
       <div class="row3 footer fade-in-target">
         <a class="social" href="#">mymail@example.com</a>
         <div class="social">
-          <a href="#">LinkedIn</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
+          <a href="#" aria-label="LinkedIn profile of Lorem Ipsum">LinkedIn</a>
+          <a href="#" aria-label="Instagram profile of Lorem Ipsum"
+            >Instagram</a
+          >
+          <a href="#" aria-label="Twitter profile of Lorem Ipsum">Twitter</a>
         </div>
         <p class="copyright">
           © 2025 -
@@ -240,77 +257,6 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const isDesktop = window.innerWidth >= 768;
-
-        setTimeout(() => {
-          if ("scrollRestoration" in history) {
-            history.scrollRestoration = "manual";
-          }
-          window.scrollTo(0, 0);
-        }, 300);
-
-        const rows = {
-          row1: document.querySelector(".row1"),
-          row2: document.querySelector(".row2"),
-          row3: document.querySelector(".row3"),
-          row4: document.querySelector(".row4"),
-        };
-        const navbar = document.querySelector(".nav");
-
-        let hasScrolled = false;
-
-        const visibilityObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach(({ target, isIntersecting }) => {
-              target.classList.toggle("visible", isIntersecting);
-            });
-          },
-          { threshold: 0.1 }
-        );
-
-        document
-          .querySelectorAll(
-            ".project1, .project2, .project3, .about, .projects"
-          )
-          .forEach((el) => visibilityObserver.observe(el));
-
-        const fadeObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach(({ target, isIntersecting }) => {
-              target.classList.toggle("animate", isIntersecting);
-            });
-          },
-          { threshold: 0.1 }
-        );
-
-        document
-          .querySelectorAll(".fade-in-target")
-          .forEach((el) => fadeObserver.observe(el));
-
-        const handleScroll = () => {
-          const scrollY = window.scrollY;
-
-          if (!hasScrolled && scrollY > 0) {
-            hasScrolled = true;
-          }
-
-          if (isDesktop && hasScrolled) {
-            const addLeft = scrollY > 200;
-            const addNavbar = scrollY > 500;
-
-            rows.row2?.classList.toggle("text-movement-left", addLeft);
-            rows.row4?.classList.toggle("text-movement-left", addLeft);
-            rows.row1?.classList.toggle("text-movement-right", addLeft);
-            rows.row3?.classList.toggle("text-movement-right", addLeft);
-
-            navbar?.classList.toggle("visible", addNavbar);
-          }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

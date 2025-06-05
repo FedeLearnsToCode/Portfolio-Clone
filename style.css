@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+/* Reset and utility */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,16 @@
   transform: translateY(0);
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Global */
+
 html {
   font-size: 16px;
 }
@@ -28,6 +40,17 @@ body, main {
 body {
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color:#eaeaea;
+}
+
+*:focus-visible {
+  outline: 2px solid red;
+  outline-offset: 2px;
 }
 
 /* ============================== NAVBAR ============================== */
@@ -113,9 +136,8 @@ body {
   opacity: 0;
 }
 
-.small-text.hover {
-  transform: scale(1.5);
-  cursor: pointer;
+.hero a:hover {
+  text-decoration: underline;
 }
 
 /* ============================== PROJECTS ============================== */
@@ -149,7 +171,6 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* height: 25vh; */
   border-bottom: 1px solid rgb(43, 42, 42, 0.5);
 }
 
@@ -305,10 +326,6 @@ h2.project-subtitle {
   text-decoration: none;
   color: #eaeaea;
   cursor: pointer;
-}
-
-.row3.footer a:hover {
-  text-decoration: underline;
 }
 
 .fade-in-target {

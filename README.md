@@ -20,7 +20,7 @@ This is a front-end project built as a learning exercise. It is a clone inspired
 
 ### Links
 
-- Live Site URL: [https://fedelearnstocode.github.io/Portfolio-Clone/](https://fedelearnstocode.github.io/Portfolio-Clone/)
+- Live Site URL: [https://your-deployed-link.com](https://your-deployed-link.com)
 
 ## Built With
 
@@ -29,6 +29,7 @@ This is a front-end project built as a learning exercise. It is a clone inspired
 - Flexbox
 - Responsive design techniques
 - JavaScript for interactivity and scroll animations
+- Accessibility features (keyboard focus, ARIA roles, visible focus styles)
 
 ## What I Learned
 
