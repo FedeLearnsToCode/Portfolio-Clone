@@ -20,7 +20,7 @@ This is a front-end project built as a learning exercise. It is a clone inspired
 
 ### Links
 
-- Live Site URL: [https://your-deployed-link.com](https://your-deployed-link.com)
+- Live Site URL: https://fedelearnstocode.github.io/Portfolio-Clone/
 
 ## Built With
 
